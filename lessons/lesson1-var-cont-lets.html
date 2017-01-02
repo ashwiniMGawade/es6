@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Var const and Let</title>
+        <script>
+        //var variables are mutable, its value can be reassigned
+
+        var width = 100;
+        console.log(width);
+
+        width = 200;
+        console.log(width);
+
+        //scope of var variables is within the function..ie functional scope
+
+        function setHeight() {
+            var height = 300;
+            console.log(height);
+        }
+        setHeight();
+        //console.log(height); // undefined
+
+
+
+        //scope is not within the block..so outside of the block varaible would be accessible
+        var age = 10;
+        if (age > 5) {
+            var dogYears = age * 7;
+            console.log(`you are ${dogYears} years old!`);
+        }
+        console.log(dogYears); //accessible outside the block
+
+
+        //let: let are also mutable variables but are block scoped. even functions are block
+        // const: const are also block scopeed
+
+        if (age > 5) {
+            let dogYearslet = age * 7;
+            const const_var = 100;
+            console.log(`you are ${dogYearslet} years old!`);
+        }
+        //console.log(dogYearslet); //not accessible outside the block
+        //console.log(const_var);  //not accessible outside the block
+
+        </script>
+    </head>
+
+</html>
