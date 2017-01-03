@@ -1,7 +1,6 @@
 {
   "name": "es6",
   "description": "es6 self learning",
-  "version": "kumo-dev-sprint70-v1.1.9",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/ashwiniMGawade/es6/issues"
   },
-  "homepage": "https://github.com/ashwiniMGawade/es6#readme"
+  "homepage": "https://github.com/ashwiniMGawade/es6#readme",
+  "dependencies": {
+    "release-it": "^2.5.3"
+  },
+  "version": "kumo-dev-sprint70-v1.1.9"
 }
